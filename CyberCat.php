@@ -1,5 +1,4 @@
 <?php
-//$data = "js.users.51.la";
 // APIs dont like these unless encoded but we need them for regex checking
 function remove_http($url) {
     $disallowed = array('http://', 'https://', 'https://www.', 'http://www.', 'www.');
@@ -335,7 +334,7 @@ if(!isset($_POST['datalookup'])) {
         <tr><td colspan="2"><img src="https://i.ibb.co/cK57yym/ccat.png"></td></tr>
         <tr>
         <td class="tdh1" style="text-align: right"><b>LOOKUP:</b></td>
-        <td class="tdh2"><b><form action="api.php" method="post">
+        <td class="tdh2"><b><form action="CyberCat.php" method="post">
                     <input type="text" name="datalookup" placeholder="IP - DOMAIN (http(s)://) - HASH" value="<?php echo $data; ?>"/>
                     <input type="submit" name="submit" value="GO" />
                 </form></b></td>
