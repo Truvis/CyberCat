@@ -6,6 +6,9 @@ The applicaion features smart logic which will determine if input is an IP, DOMA
 
 The finished project will come as a deployable container and a quick setup guide to input API keys.
 
+Special Thanks to the following for funding or providing free access to premium APIs to allow for integration:
+- Your company/name here.
+
 TODO:
 - Continue to add more sources
 - Create an overview/summary page
