@@ -4,6 +4,10 @@ function remove_http($url) {
     $disallowed = array('http://', 'https://', 'https://www.', 'http://www.', 'www.');
     foreach($disallowed as $d) {
         if(strpos($url, $d) === 0) {
+            // remove / from a copy and paste
+            if(substr($url, -1) == '/') {
+                $url = substr($url, 0, -1);
+            }
             return str_replace($d, '', $url);
         }
     }
